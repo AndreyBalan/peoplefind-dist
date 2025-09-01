@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="kz">
+    <head>
+        <title>People Find - Свяжитесь с нами</title>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Meta Description" />
+        <meta name="format-detection" content="telephone=no" />
+        <!-- <style>body{opacity: 0;}</style> -->
+        <link rel="stylesheet" href="/css/style.min.css?_v=20250901113630" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <!-- <meta name="robots" content="noindex, nofollow"> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+            .contact__form input {
+                font-size: 15px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                <div class="header__container">
+                    <div class="header__wrapper">
+                        <div class="header__logo">
+                            <a href="/kz">
+                                <img src="/img/logo.svg" alt="People Find" />
+                            </a>
+                        </div>
+                        <div class="header__menu menu">
+                            <nav class="menu__body">
+                                <ul class="menu__list">
+                                    <li class="menu__item">
+                                        <a href="/kz" class="menu__link">Главная</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="/kz/about.html" class="menu__link">О нас</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="/kz/services.html" class="menu__link dropdown">
+                                            <span class="menu__text">Услуги</span>
+                                            <img
+                                                src="/img/arrow-menu.svg"
+                                                class="arrow"
+                                                alt="arrow" />
+                                        </a>
+                                        <ul class="dropdown__menu">
+                                            <li>
+                                                <a href="/kz/reckzitment.html"
+                                                    >Подбор руководящего персонала</a
+                                                >
+                                            </li>
+                                            <li><a href="/kz/resources.html">Кадры</a></li>
+                                            <li><a href="/kz/training.html">Обучение</a></li>
+                                            <li>
+                                                <a href="/kz/consulting.html">Консалтинг</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="/kz/clients.html" class="menu__link">Клиенты</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="/kz/careers.html" class="menu__link">Карьера</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="/kz/contact.html" class="menu__link active"
+                                            >Контакты</a
+                                        >
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="#" class="menu__link dropdown">
+                                            <span class="menu__text">kz</span>
+                                            <img
+                                                src="/img/arrow-menu.svg"
+                                                class="arrow"
+                                                alt="arrow" />
+                                        </a>
+                                        <ul class="dropdown__menu">
+                                            <li><a href="/kz">KZ</a></li>
+                                            <li><a href="/">EN</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <button type="button" class="menu__icon icon-menu">
+                                <span><span class="sr-only">menu btn</span></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <main class="page mob-decor">
+                <section class="contact">
+                    <div class="contact__container">
+                        <div class="contact__wrapper">
+                            <div class="contact__content">
+                                <h2 class="contact__title section__title">Свяжитесь с нами</h2>
+                                <p class="contact__desc section__desc">
+                                    Хотите воспользоваться нашими выдающимися услугами, чтобы
+                                    продвинуть свою карьеру? Свяжитесь с нами по контактным данным
+                                    на этой странице, и мы ответим вам в кратчайшие сроки!
+                                </p>
+                                <ul class="contact__list">
+                                    <li class="contact__list-item">+995571109605</li>
+                                    <li class="contact__list-item">office@work-point.pro</li>
+                                    <li class="contact__list-item">
+                                        ул. Большая Ордынка, 50 строение 2, Москва, Россия, 119017
+                                    </li>
+                                </ul>
+                            </div>
+                            <form
+                                class="contact__form"
+                                action="files/sendmail/sendmail.php"
+                                method="POST"
+                                data-popup-message="#form-message"
+                                data-ajax>
+                                <div class="form__line">
+                                    <div>
+                                        <input
+                                            type="text"
+                                            id="name"
+                                            name="name"
+                                            data-error="Неправильное имя"
+                                            data-required
+                                            placeholder="Имя " />
+                                    </div>
+                                    <div>
+                                        <input
+                                            type="text"
+                                            id="surname"
+                                            name="surname"
+                                            placeholder="Фамилия " />
+                                    </div>
+                                </div>
+
+                                <div class="form__line">
+                                    <div>
+                                        <input
+                                            type="email"
+                                            id="email"
+                                            name="email"
+                                            data-required="email"
+                                            data-error="Неправильная почта"
+                                            placeholder="Электронная почта " />
+                                    </div>
+                                    <div>
+                                        <input
+                                            type="text"
+                                            name="phone"
+                                            id="phone"
+                                            placeholder="Номер телефона" />
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <textarea
+                                        name="message"
+                                        id="message"
+                                        placeholder="Расскажите, чем мы можем вам помочь"></textarea>
+                                </div>
+                                <div>
+                                    <span class="upload__subtitle"
+                                        >Приложите соответствующие файлы:</span
+                                    >
+                                </div>
+
+                                <div class="form__file">
+                                    <label for="file-upload" class="file-label">
+                                        <img src="/img/upload.svg" alt="upload" /> Загрузить файл
+                                    </label>
+                                    <input
+                                        type="file"
+                                        id="file-upload"
+                                        name="attachment"
+                                        class="file-input" />
+                                    <span id="file-chosen" class="file-chosen">Файл не выбран</span>
+                                </div>
+                                <!-- custom script -->
+                                <script>
+                                    const fileInput = document.getElementById("file-upload");
+                                    const fileChosen = document.getElementById("file-chosen");
+
+                                    fileInput.addEventListener("change", () => {
+                                        if (fileInput.files.length > 0) {
+                                            fileChosen.textContent = fileInput.files[0].name;
+                                        } else {
+                                            fileChosen.textContent = "No file chosen";
+                                        }
+                                    });
+                                </script>
+                                <!--  -->
+
+                                <div class="form__checkbox">
+                                    <input type="checkbox" id="agree" name="agree" required />
+                                    <label for="agree">
+                                        Я прочитал(а) и согласен(а) с
+                                        <a href="policy.html">Политикой конфиденциальности</a> и
+                                        <a href="terms.html">Условиями использования</a>
+                                        <span> Workpoint</span>!
+                                    </label>
+                                </div>
+
+                                <button class="contact__btn btn" type="submit">Отправить</button>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer">
+                <div class="footer__container">
+                    <div class="footer__top">
+                        <div class="footer__wrapper-top">
+                            <div class="footer__logo">
+                                <img src="/img/logo.svg" alt="People Find" />
+                            </div>
+                            <ul class="footer__nav-top">
+                                <li class="footer__link"><a href="/kz">Главная</a></li>
+                                <li class="footer__link"><a href="/kz/about.html">О нас</a></li>
+                                <li class="footer__link"><a href="/kz/services.html">Услуги</a></li>
+                                <li class="footer__link"><a href="/kz/clients.html">Клиенты</a></li>
+                                <li class="footer__link"><a href="/kz/careers.html">Карьера</a></li>
+                                <li class="footer__link">
+                                    <a href="/kz/contact.html">Контакты</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__bottom">
+                        <div class="footer__wrapper-bottom">
+                            <div class="footer__copy">Copyright © 2025. Все права защищены.</div>
+                            <ul class="footer__nav-bottom">
+                                <li class="footer__link">
+                                    <a href="policy.html">Политика конфиденциальности</a>
+                                </li>
+                                <li class="footer__link"><a href="terms.html">Условия</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <div id="form-message" aria-hidden="false" class="popup">
+            <div class="popup__wrapper">
+                <div class="popup__content">
+                    <button data-close="" type="button" class="popup__close">
+                        <svg
+                            width="23"
+                            height="23"
+                            viewBox="0 0 23 23"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                opacity="0.850056"
+                                d="M1.73333 1.48883L21.5469 21.0288"
+                                stroke="#979797"
+                                stroke-linecap="square"></path>
+                            <path
+                                opacity="0.850056"
+                                d="M21.2667 1.48883L1.45309 21.0288"
+                                stroke="#979797"
+                                stroke-linecap="square"></path>
+                        </svg>
+                    </button>
+                    <div class="popup__text">Форма успешно отправлена!</div>
+                </div>
+            </div>
+        </div>
+        <script src="js/app.min.js?_v=20250901113630"></script>
+    </body>
+</html>
